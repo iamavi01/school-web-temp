@@ -1,10 +1,10 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-
+import "./slider.css"
 
 const Slider = () => {
   return (
-    <div>
+    <div className="slider">
      <Carousel>
   <Carousel.Item interval={10000}>
     <img
