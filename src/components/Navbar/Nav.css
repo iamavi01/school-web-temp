@@ -1,0 +1,51 @@
+.nav_body{
+    height:12vh;
+    width:100%;
+    /* background-color: whitesmoke; */
+    font-family: Roboto, sans-serif;
+    /* font-size:14px; */
+    font-weight: 500;
+    /* line-height: 25px; */
+    display: inline-block;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav_ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+li{
+    padding-top:10px;
+    padding:20px;
+}
+li:hover{
+    background-color: aquamarine;
+}
+.nav_res{
+    display: none;
+}
+.nav_btn{
+    border:none;
+    font-size:24px;
+    background-color: white;
+}
+.nav_btn:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+@media (max-width:998px) {
+    li{
+        color:red;
+    }
+    .nav_ul{
+        display: none;
+    }
+    .nav_res{
+        display:block;
+        float:right;
+        margin:1rem;
+    }
+}

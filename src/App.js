@@ -1,11 +1,11 @@
-import React from 'react'
-import Slider from './components/header/slider/Slider'
-
-
-const App = () => {
+import React from 'react';
+import NavBar from './components/Navbar/Nav';
+function App() {
   return (
-    <Slider/>
-  )
+    <>
+    <NavBar />
+    </>
+    );
 }
 
 export default App
