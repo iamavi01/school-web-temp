@@ -1,7 +1,8 @@
 .nav_body{
-    /* height:12vh; */
+    height:8.4vh;
     width:100%;
-    background-color: whitesmoke;
+    background-color: black;
+    color:white;
     font-family: Roboto, sans-serif;
     font-weight: 500;
     display: inline-block;
@@ -9,55 +10,55 @@
     padding:0;
     box-sizing: border-box;
     position: fixed;
-    margin-top:-28px;
+    z-index: 10;
 }
 .nav_ul{
     display: inline-flex;
     list-style: none;
+    margin-left: 20px;
 
 }
 li{
-    padding-top:10px;
-    padding:20px;
-    /* position: relative; */
+    padding:20px 20px ;
     cursor: pointer;
+
 }
 li:hover{
-    background-color: #7cc1ac;
+    background-color: rgb(46, 45, 45);
     color:white;
     transition: all ease 0.5s;
 }
 .nav_login{
+    display: flex;
+    align-items: center;
+    height:8.4vh;
     float:right;
-    display: flex;
-    align-items: center;
-    height:10vh;
+    /* background-color: black; */
+    /* margin-top:1.5vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* height:10vh; */
     margin-right: 1.9vh;
-    padding-top:6px;
+    display: none;
+    /* padding-top:6px; */
     
-}
-.nav_login_btn{
-    border:none;
-    background-color: #7cc1ac;
-    height:42px;
-    width:100px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .nav_res{
     display: none;
+    position: relative;
+    top:-7vh;
+
+
+}
+.nav_btn{
+    display: none;
+    
 }
 .nav_ham_ul{
     display: none;
 }
 .nav_login_icon{
-    /* display: flex;
-    align-items: center; */
-    /* padding:2px; */
     font-size: 19px;
-    /* margin-top:10px; */
 }
 .nav_li_down{
     font-size: 11px;
@@ -73,11 +74,16 @@ li:hover{
     line-height: 12px;
     color:black;
 }
-/* .nav_hover.active{
-    display: block;
-    list-style: none;
-    line-height: 12px;
-} */
+.nav_logo{
+    height:25px;
+    width:160px;
+    margin-left: 20px;
+    /* margin-top: -10px; */
+}
+
+
+
+
 
 
 @media (max-width:998px) {
@@ -90,30 +96,31 @@ li:hover{
         display:block;
         float:right;
         margin:0.56rem;
+        background-color: black;
     }
 
     .nav_ham{
         min-height:55vh;
         width:100%;
-        background-color: whitesmoke;
+        background-color: black;
         box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
         margin: auto;
         display: none;
         border-radius: 4px;
-        /* transition: all 1s;
-        transform: translateY(1px); */
     }
     .nav_btn{
+        display: block;
         border:none;
-        /* position: absolute; */
         font-size:24px;
-        background-color: white;
+        background-color:black;
+        color:white;
         border-radius: 4px;
-        /* z-index: 1000; */
+        z-index: 1000;
+        float:right;
+        margin-top:-5vh;
+        margin-right:20px;
     }
-    .nav_btn:hover{
-        color: rgb(151, 150, 150);
-    }
+    
     .nav_ham_ul{
         display: block;
         margin: 0px;
@@ -130,13 +137,24 @@ li:hover{
         list-style: none;
         padding:0;
         margin-left:-20px;
+        padding-left: 60px;
         /* width:100%; */
         margin-right:-20px;
         margin-bottom: -20px;
         margin-top:10px;
-        background-color: whitesmoke;
-        color:black;
+        background-color: black;
+        color:white;
         display: none;
+    }
+    .nav_logo{
+        margin-top:10px;
+    }   
+}
+@media only screen and (max-width: 1062px) and (min-width: 998px)  {
+
+    li{
+        padding:20px 15px ;
+
     }
 
 }

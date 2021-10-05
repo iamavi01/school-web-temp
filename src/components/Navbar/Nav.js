@@ -12,11 +12,11 @@ const Nav = () => {
         
         if (nav_ham.style.display == 'block'){
         nav_ham.style.display='none';
-        nav_btn.style.backgroundColor= 'white';
+        // nav_btn.style.backgroundColor= 'white';
 
     }else{
         nav_ham.style.display='block';
-        nav_btn.style.backgroundColor= 'whitesmoke';
+        // nav_btn.style.backgroundColor= 'whitesmoke';
 
         }
     }
@@ -67,6 +67,7 @@ const Nav = () => {
 
     return (
         <div className="nav_body">
+                <img src="https://dcstatic.com/images/brandcrowd/logos/brandcrowd-logo-5d59400c52.svg" className="nav_logo" />
             <ul className="nav_ul">
                 <li>HOME</li>
                 <li onMouseOver={nav_dropdown} onMouseLeave={nav_dropup}>ABOUT <span className="nav_li_down" ><AiOutlineDown /></span>
@@ -90,7 +91,7 @@ const Nav = () => {
                 <li>CONTACT</li>
             </ul>
             <div className="nav_login"><button className="nav_login_btn"><span>Log in</span>&nbsp; <span className="nav_login_icon"><FiLogIn  /></span> </button></div><br />
-            <div className="nav_res"><button className="nav_btn" onClick={nav_click}> <AiOutlineMenu /></button></div>
+            <button className="nav_btn" onClick={nav_click}> <AiOutlineMenu /></button>
             <div className="nav_ham">
                 <ul className="nav_ham_ul">
                 <li>HOME</li>
