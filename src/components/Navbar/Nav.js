@@ -62,7 +62,7 @@ const Nav = () => {
                 </ul>
                 </li>
                 <li className="items">ADMISSION</li>
-                <li className="items"onMouseOver={nav_dropdown2} onMouseLeave={nav_dropup2}>ACTIVITIES <span className="nav_li_down" ><AiOutlineDown /></span>
+                <li className="items"onMouseOver={nav_dropdown2} onMouseLeave={nav_dropup2}>ACTIVITIES <span className="nav_li_down" ></span>
                 <ul className="nav_hover2">
                     <li>Events</li>
                     <li>News</li>
