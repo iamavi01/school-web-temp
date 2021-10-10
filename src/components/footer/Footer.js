@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
-import {AiTwotoneMail} from "react-icons/ai"
-import {BsFillTelephoneFill} from 'react-icons/bs';
+import {AiTwotoneMail,AiFillTwitterCircle,AiOutlineInstagram,AiOutlineWhatsApp} from     "react-icons/ai"
+import {BsFillTelephoneFill ,BsFacebook } from 'react-icons/bs';
 import {ImLocation} from "react-icons/im"
 import {MdExpandMore} from "react-icons/md"
 const Footer = () => {
@@ -20,26 +20,27 @@ const Footer = () => {
                 src="https://manager.pokhariyaschool.edu.np/uploads/pokhariyaschool/logo/logo.png"
                 /></div>
               <div className="call">
-              <BsFillTelephoneFill className="clicon"/> Phone:{number}
+              <BsFillTelephoneFill className="icon themgreen"/> Phone:{number}
               </div>
               <div className="mail text_color_white">
-              <AiTwotoneMail className="mailicon"/> Email:{email}
+              <AiTwotoneMail className="icon themgreen"/> Email:{email}
               </div>
               <div className="location text_color_white">
-              <ImLocation className="mailicon" /> Location:{location}
+              <ImLocation className="icon themgreen" /> Location:{location}
               </div>
             </div>
 
           <div className="inner_second ">
-           <div className="tittle text_color_white uppercase align_left">some useful links</div>
-           <ul className="tlinks">
-             <li className="capitalize align_left " ><MdExpandMore className="rotate"/>Home</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>COntact</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>Learn</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>visit</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>okay</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>gogo</li>
-             <li className="capitalize align_left "><MdExpandMore className="rotate"/>come</li>
+           <div className="tittle text_color_white capitalize align_left">some useful links</div>
+           <div className="line"></div>
+           <ul className="tlinks light">
+             <li className="capitalize linkslist align_left " ><MdExpandMore className="rotate"/>Home</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>COntact</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>Learn</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>visit</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>okay</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>gogo</li>
+             <li className="capitalize linkslist align_left "><MdExpandMore className="rotate"/>come</li>
              </ul></div>
           
             <div className="inner_first_items_logo">
@@ -53,8 +54,12 @@ const Footer = () => {
               </div>
             </div>
       </section>
+      <div className="hrbig"></div>
       <div className="Social_Links">
-        Social Links Here
+        <div className="social_icons"><BsFacebook/></div>
+        <div className="social_icons"><AiFillTwitterCircle/></div>
+        <div className="social_icons"><AiOutlineInstagram/></div>
+        <div className="social_icons"><AiOutlineWhatsApp/></div>
       </div>
                 </footer>
     </>
