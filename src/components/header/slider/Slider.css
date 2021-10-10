@@ -1,4 +1,4 @@
 .slider_body{
-    position: fixed;
-    margin-top:8.4vh;
+    position: relative;
+    /* margin-top:9vh; */
 }

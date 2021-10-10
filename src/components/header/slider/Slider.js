@@ -11,7 +11,7 @@ const Slider = () => {
   <Carousel.Item interval={10000}>
     <img
       className="d-block w-100"
-      src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700396816.jpg"
+      src="https://manager.pokhariyaschool.edu.np/uploads/pokhariyaschool/slides/Before%203%20years.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -22,7 +22,7 @@ const Slider = () => {
   <Carousel.Item interval={10000}>
     <img
       className="d-block w-100"
-      src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700396816.jpg"
+      src="https://manager.pokhariyaschool.edu.np/uploads/pokhariyaschool/slides/Panaromic%20view.jpg"
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -33,7 +33,7 @@ const Slider = () => {
   <Carousel.Item interval={10000}>
     <img
       className="d-block w-100"
-      src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700396816.jpg"
+      src="https://manager.pokhariyaschool.edu.np/uploads/pokhariyaschool/slides/Shree%20Pokhariya.JPG"
       alt="Third slide"
     />
     <Carousel.Caption>

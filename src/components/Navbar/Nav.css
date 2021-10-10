@@ -1,21 +1,23 @@
 .nav_body{
     height:8.4vh;
     width:100%;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    display: inline-block;
     margin:0;
     padding:0;
     box-sizing: border-box;
     position: fixed;
+    /* display: block; */
+    /* position: relative; */
+    /* box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%) ; */
     z-index: 10;
 }
 .nav_ul{
     display: inline-flex;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
 li{
@@ -24,25 +26,27 @@ li{
 
 }
 li:hover{
-    background-color: rgb(46, 45, 45);
+    background-color: #00b16a;
     color:white;
     transition: all ease 0.5s;
 }
-.nav_login{
+/* .nav_login{
+    float: right;
+    margin-top:18px;
+    margin-right:40px;
+    border:none;
+    background-color: #00b16a;
+    color:white;
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
     display: flex;
     align-items: center;
-    height:8.4vh;
-    float:right;
-    /* background-color: black; */
-    /* margin-top:1.5vh; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* height:10vh; */
-    margin-right: 1.9vh;
-    display: none;
-    /* padding-top:6px; */
+    justify-content: center;
+    font-size: 16px;
+    position: relative;
     
-}
+} */
 .nav_res{
     display: none;
     position: relative;
@@ -75,19 +79,24 @@ li:hover{
     color:black;
 }
 .nav_logo{
-    height:25px;
-    width:160px;
-    margin-left: 20px;
-    /* margin-top: -10px; */
+    height:85%;
+    width:60px;
+
+    margin-left: 30px;
 }
 
 
 
 
 
-
 @media (max-width:998px) {
-    
+    .nav_body{
+        height:6vh;
+        position:relative;
+    }
+    .nav_logo{
+        display: none;
+    }
     
     .nav_ul{
         display: none;
@@ -105,6 +114,9 @@ li:hover{
         background-color: black;
         box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
         margin: auto;
+        /* margin-top:10vh; */
+        /* position: relative;
+        margin-top:20vh; */
         display: none;
         border-radius: 4px;
     }
@@ -112,17 +124,19 @@ li:hover{
         display: block;
         border:none;
         font-size:24px;
-        background-color:black;
-        color:white;
+        background-color:white;
+        color:black;
         border-radius: 4px;
         z-index: 1000;
         float:right;
-        margin-top:-5vh;
+        /* margin-top:-1vh; */
         margin-right:20px;
+        /* position: fixed; */
     }
     
     .nav_ham_ul{
         display: block;
+        background-color: white;
         margin: 0px;
         padding: 0px;
         list-style: none;
@@ -142,8 +156,8 @@ li:hover{
         margin-right:-20px;
         margin-bottom: -20px;
         margin-top:10px;
-        background-color: black;
-        color:white;
+        background-color: white;
+        color:black;
         display: none;
     }
     .nav_logo{
@@ -154,7 +168,6 @@ li:hover{
 
     li{
         padding:20px 15px ;
-
     }
 
 }

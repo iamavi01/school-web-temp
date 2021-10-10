@@ -12,7 +12,7 @@ const Latest = () => {
             <>
             <div className="latest_container">
             {console.log(val)}
-                <img className="latest_image" src={val.img} height="450" width="100%" />
+                <img className="latest_image" src={val.img} height="550" width="100%" />
                 <br /><br /><div className="latest_post_date"><span className="latest_logo"><BsCalendar2Minus /> </span>{val.date_top}</div>
                   <div className="latest_container_title">{val.title}</div><br />
                     <div className="latest_container_body">{val.body}</div>
