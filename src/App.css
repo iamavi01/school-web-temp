@@ -1,0 +1,41 @@
+
+  
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    /* display: none; */
+    animation: fadeIn 200ms ease-in-out 500ms both;
+    color:white;
+    height:60px;
+    width:60px;
+    /* background-color:blue; */
+    cursor: pointer;
+  }
+  .scroll_btn{
+    background-color: rgb(190, 188, 188);
+    animation: fadeIn 200ms ease-in-out 500ms both;
+    border-radius: 50%;
+    height:45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:45px;
+    /* opacity: 0; */
+  }
+  .scroll_btn:hover{
+    background-color: #00b16a;
+    /* color:#00b16a; */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
